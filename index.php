@@ -7,7 +7,8 @@
 <body>
    <form action="" method="post" >
       Primeiro Numero: <input name="num1" type="text"><br>
-      Segundo numero: <input name="num2" type="text"><br>
+      Segundo Numero: <input name="num2" type="text"><br>
+      Terceiro Numero: <input name="num3" type="text"><br> 
       <input type="submit" name="operacao" value="+">     
       <input type="submit" name="operacao" value="-">     
       <input type="submit" name="operacao" value="*">     
@@ -21,16 +22,17 @@
 
    if( !empty($op) ) {
       if($op == '+')
-         $c = $a + $b;
+         $d = $a + $b + $c;
       else if($op == '-')
-         $c = $a - $b;
+         $d = $a - $b - $c;
       else if($op == '*')
-         $c = $a*$b;
+         $d = $a*$b*$c;
       else
-         $c = $a/$b;
+         $d = $a/$b/$c;
 
       echo "O resultado da operação é: $c";
    }
 ?>       
 </body>
+
 </html>
